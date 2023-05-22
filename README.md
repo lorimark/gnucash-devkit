@@ -112,6 +112,30 @@ Fistly, the -u (user id) and -g (group id) is provided when launched from the co
    fi
 
    example:
+   04:45 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $ cat ./run.sh 
+   #
+   # This runs the gnucash-devkit container, hooking it in to
+   #  the local file system for logging and other things.
+   #
+   #
+
+   docker run                               \
+     -it                                    \
+     --rm                                   \
+     --net host                             \
+     -u $(id -u ${USER}):$(id -g ${USER})   \
+     -v /etc/passwd:/etc/passwd             \
+     -v /etc/group:/etc/group               \
+     -v /home:/home                         \
+     -v /tmp/.X11-unix:/tmp/.X11-unix       \
+     -v $HOME/.Xauthority:$HOME/.Xauthority \
+     -e "TERM=xterm-256color"               \
+     -e "DISPLAY=$DISPLAY"                  \
+     -w ${PWD}                              \
+     lorimark/gnucash-devkit                \
+     /bin/bash
+
+
    04:46 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $ ./run.sh
    *************************************************************
    **** DOCKER CONTAINER ***************************************
@@ -141,8 +165,6 @@ Fistly, the -u (user id) and -g (group id) is provided when launched from the co
 
    (gnucash-devkit)-> 04:46 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $
 </pre>
-
-
 
 If the 'dockerenv' file exists, then the command prompt is changed to show the containername.
 
