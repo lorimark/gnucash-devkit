@@ -105,7 +105,15 @@ Fistly, the -u (user id) and -g (group id) is provided when launched from the co
    if test -f /.dockerenv; then
      PS1="($(cat /.containername))-> $PS1"
    fi
+
+   before:
+   04:39 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $
+
+   after:
+   (gnucash-devkit)-> 04:40 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $
 </pre>
+
+
 
 If the 'dockerenv' file exists, then the command prompt is changed to show the containername.
 
