@@ -115,7 +115,7 @@ Fistly, the -u (user id) and -g (group id) is provided when launched from the co
    04:45 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $ cat ./run.sh 
    #
    # This runs the gnucash-devkit container, hooking it in to
-   #  the local file system for logging and other things.
+   #  the local file system for directly compiling files on the host.
    #
    #
 
@@ -148,6 +148,8 @@ Fistly, the -u (user id) and -g (group id) is provided when launched from the co
      mc  - midnight commander
      gcc - full gcc development installation
      git - source repo manager
+     developer-essentials
+     build-dep gnucash 
 
    Documentation;
 
