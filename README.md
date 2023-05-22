@@ -17,12 +17,12 @@ Here is an example run-script;
       -v /etc/group:/etc/group             \  # hook so group is available
       -v /home:/home                       \  # map to localhome
       -w ${PWD}                            \  # work in current directory
-      lsus1:5000/gnucash-devkit               # the image name to run
+      lorimark/gnucash-devkit                 # the image name to run
 
 Options Details;
 
 'docker run'
-This runs the docker image specified by the 'lsus1:5000/gnucash-devkit' on the command line.
+This runs the docker image specified by the 'lorimark/gnucash-devkit' on the command line.
 
 '-it'
 This causes the console to be automatically connected 'inside' the container, running
@@ -82,7 +82,7 @@ This sets the 'working' directory to be the same as the path we are in when we l
  maybe except the apearance of the command prompt.  It's like we are able to install and run
  all our build-tools with a single command.
 
-'lsus1:5000/gnucash-devkit'
+'lorimark/gnucash-devkit'
 This is the name of the actual image that we want to pull from.
 
 

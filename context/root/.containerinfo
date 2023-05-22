@@ -5,10 +5,16 @@ gnucash development toolkit
 
 Tools available to you;
 
+  vim - vim
   mc  - midnight commander
   gcc - full gcc development installation
+  git - source repo manager
 
-see:
+Documentation;
+
+  /README.md - detailed notes about this image
+
+References;
 
   https://wiki.gnucash.org/wiki/Development
 
