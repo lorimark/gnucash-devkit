@@ -101,9 +101,11 @@ Fistly, the -u (user id) and -g (group id) is provided when launched from the co
  inside a container.  This is done by testing for a '.containername' file that was built-in
  to the image.
 
-   75 if test -f /.dockerenv; then
-   76   PS1="($(cat /.containername))-> $PS1"
-   77 fi
+<pre>
+   if test -f /.dockerenv; then
+     PS1="($(cat /.containername))-> $PS1"
+   fi
+</pre>
 
 If the 'dockerenv' file exists, then the command prompt is changed to show the containername.
 
