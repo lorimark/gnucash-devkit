@@ -17,6 +17,6 @@ docker run                               \
   -e "TERM=xterm-256color"               \
   -e "DISPLAY=$DISPLAY"                  \
   -w ${PWD}                              \
-  lsus1:5000/gnucash-devkit              \
+  lorimark/gnucash-devkit                \
   /bin/bash
 
