@@ -39,6 +39,7 @@ RUN apt-get update -q              \
       libglib2.0-dev               \
       pkg-config                   \
       cmake                        \
+      git                          \
       gettext                      \
       gcc                          \
       g++                          \
