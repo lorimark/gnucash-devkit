@@ -140,6 +140,11 @@ Fistly, the -u (user id) and -g (group id) is provided when launched from the co
    *************************************************************
 
    (gnucash-devkit)-> 04:46 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $
+   (gnucash-devkit)-> 04:46 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $
+   (gnucash-devkit)-> 04:46 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $
+
+   New prompt includes the name of the container we are running inside of.
+
 </pre>
 
 
