@@ -29,7 +29,7 @@ RUN apt-get update -q              \
       wget                         \
       mc                           \
       vim                          \
-      wget                         \
+      wget
 
 #
 # Install the dev libraries
