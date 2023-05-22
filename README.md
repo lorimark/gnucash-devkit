@@ -102,15 +102,44 @@ Fistly, the -u (user id) and -g (group id) is provided when launched from the co
  to the image.
 
 <pre>
+   # sample host .bashrc to modify prompt for running docker containers
+   #
+   # If .dockerenv exists, then we are in a container.  Refab the prompt.
+   #  (place this in your local (host) .bashrc after all your other prompt things)
+   #
    if test -f /.dockerenv; then
      PS1="($(cat /.containername))-> $PS1"
    fi
 
-   before:
-   04:39 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $
+   example:
+   04:46 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $ ./run.sh
+   *************************************************************
+   **** DOCKER CONTAINER ***************************************
 
-   after:
-   (gnucash-devkit)-> 04:40 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $
+   gnucash development toolkit
+
+   Tools available to you;
+
+     vim - vim
+     mc  - midnight commander
+     gcc - full gcc development installation
+     git - source repo manager
+
+   Documentation;
+
+     /README.md - detailed notes about this image
+
+   References;
+
+     https://wiki.gnucash.org/wiki/Development
+
+   Happy coding!
+
+
+   **** DOCKER CONTAINER ***************************************
+   *************************************************************
+
+   (gnucash-devkit)-> 04:46 PM mark@nixhp:~/docker/gnucash/gnucash-devkit $
 </pre>
 
 
