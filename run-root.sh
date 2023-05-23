@@ -1,6 +1,7 @@
 #
-# This runs the gnucash-devkit container, hooking it in to
-#  the local file system for logging and other things.
+# This runs the gnucash-devkit container as root.
+#  This is useful is something needs to be done
+#  inside the container as 'root'.
 #
 #
 
@@ -11,6 +12,6 @@ docker run                             \
   -v /home:/home                       \
   -e "TERM=xterm-256color"             \
   -w ${PWD}                            \
-  lsus1:5000/gnucash-devkit            \
+  lorimark/gnucash-devkit              \
   /bin/bash
 
