@@ -10,6 +10,12 @@ Tools available to you;
   gcc - full gcc development installation
   git - source repo manager
 
+Running Gnucash;
+  Change to the location of your gnucash compiled binary,
+   and execute the following command;
+
+     export NO_AT_BRIDGE=1 && dbus-run-session ./gnucash
+
 Documentation;
 
   /README.md - detailed notes about this image

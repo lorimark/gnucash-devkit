@@ -29,6 +29,7 @@ RUN apt-get update -q              \
       wget                         \
       mc                           \
       vim                          \
+      lynx                         \
       wget
 
 #
@@ -39,6 +40,7 @@ RUN apt-get update -q              \
       libglib2.0-dev               \
       pkg-config                   \
       cmake                        \
+      dconf-cli                    \
       git                          \
       gettext                      \
       gcc                          \

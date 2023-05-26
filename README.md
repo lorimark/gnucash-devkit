@@ -182,4 +182,14 @@ Since the container is going to be mapped to the local /home folders, then when 
  it will hit the 'test' line and detect that it is running within the container, and will
  pick-up this additional prompt information.
 
+NOTE:
+
+Issues running gnucash;
+
+ref:
+https://askubuntu.com/questions/1076352/how-to-remove-dconf-warning-when-running-gedit-over-ssh
+dbus-run-session bin/gnucash
+
+https://unix.stackexchange.com/questions/532585/getting-dbind-warnings-about-registering-with-the-accessibility-bus
+export NO_AT_BRIDGE=1
 
